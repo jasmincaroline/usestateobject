@@ -1,0 +1,150 @@
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.header-img {
+  width: 400px;   
+  height: auto;   
+  object-fit: contain;
+  margin-bottom: 5px; 
+}
+
+
+.header-title {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.card {
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+button[type="submit"] {
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+button:focus,
+button:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+.student-list {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.student {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f3f5;
+  padding: 10px 12px;
+  margin-top: 8px;
+  border-radius: 8px;
+}
+
+.approved {
+  border-left: 6px solid #28a745;
+}
+
+.failed {
+  border-left: 6px solid #dc3545;
+}
+
+.status {
+  font-weight: bold;
+}
+
+.approved .status {
+  color: #28a745;
+}
+
+.failed .status {
+  color: #dc3545;
+}
+
+.actions button {
+  margin-left: 5px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.actions button:first-child {
+  background-color: #ffc107;
+}
+
+.actions button:first-child:hover {
+  background-color: #e0a800;
+}
+
+.actions button:last-child {
+  background-color: #dc3545;
+  color: white;
+}
+
+.actions button:last-child:hover {
+  background-color: #b02a37;
+}
+
+.empty {
+  color: #888;
+  text-align: center;
+}
+

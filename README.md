@@ -1,16 +1,48 @@
-# React + Vite
+# 🎓 **Teacher's Grade Manager**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**A simple, responsive React application designed to help educators efficiently manage and track student academic performance.**
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ **Overview**
+![UseStateObject gif](https://github.com/user-attachments/assets/c26c91f0-8e74-4b0c-9f94-6a80487993e8)
 
-## React Compiler
+The **Teacher's Grade Manager** is an **intuitive** tool built with **React** to simplify the administrative burden on educators. It provides a quick and centralized platform where teachers can:
+* **Add** new students.
+* **Record** their grades.
+* **Edit** existing entries.
+* **Instantly visualize** the pass/fail status.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🚀 **Features**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The application offers the following core functionalities:
+
+### **Data Management**
+
+* **Add Student:** Quickly register a student with their **name**, **subject**, and recorded **grade**.
+* **Entry Management:** Easily **edit** or **delete** existing student entries.
+
+### **Logic and Validation**
+
+* **Automatic Calculation:** Instant determination of **Pass/Fail** status.
+* **Validation:** Ensures that **all fields** are filled and the **grade** is strictly between **0 and 10**.
+
+### **Design & Usability**
+
+* **Centralized Layout:** Features a clean *header* perfect for including a **school logo** and the project title.
+* **Responsive Design:** The layout adapts flawlessly across **different screen sizes** (mobile, tablet, and desktop).
+
+---
+
+## 💡 **Pass/Fail Logic**
+
+The student's status is automatically evaluated based on the following criteria:
+
+| Status | Criteria |
+| :--- | :--- |
+| **PASSED** | If $\text{Grade} \ge 6$ |
+| **FAILED** | If $\text{Grade} < 6$ |
+
+---
